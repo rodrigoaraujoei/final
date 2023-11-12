@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React,{useEffect} from 'react'
 import Contact from './Components/Contact'
 import Faqs from './Components/Faqs'
 import Footer from './Components/Footer'
@@ -9,8 +9,8 @@ import Head from 'next/head'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const page = () => {
-  React.useEffect(() => {
+const Page = () => {
+  useEffect(() => {
     AOS.init();
   }, [])
   return (
@@ -407,4 +407,4 @@ Planos para empresas
   )
 }
 
-export default page
+export default Page
