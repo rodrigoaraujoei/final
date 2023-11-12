@@ -44,7 +44,7 @@ const Faqs = () => {
     <div className="mt-12 space-y-8">
     {items.map((item)=>{
       return (
-      <div className="border-2 bg-white border-gray-100 rounded-lg ">
+      <div key={item.id} className="border-2 bg-white border-gray-100 rounded-lg ">
         <button onClick={()=>Toggle(item.id)} className="flex items-center justify-between w-full p-8">
           <h1 className="font-semibold text-gray-700 ">{item.Question}</h1>
           {item.active ? (
